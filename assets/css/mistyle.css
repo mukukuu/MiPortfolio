@@ -1,0 +1,30 @@
+/*--root colors--*/
+:root {
+    --sage: rgba(144,174,172,1);
+    --lightpurple: rgba(177,162,183,1);
+    --meat: rgba(255,191,191,1);
+    --grape: rgba(111,58,130,0.65);
+    --beachwater: rgba(99,214,214,0.8);
+    --indigo: rgba(52,128,171,1);
+}
+
+/*----------------------- body ------------------*/
+body {
+    color: var(--sage);
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/*-------------------- header-sect ------------------ */
+
+    
+    
+    }
+/*----------------------- header ------------------*/
+header {
+    background-color: var(--sage);
+    color: var(--sage);
+}
+header h1 {
+    color: var(--grape);
+    text-decoration: none;
+}
