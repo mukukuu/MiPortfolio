@@ -20,7 +20,7 @@ body {
     font-family: Arial, Helvetica, sans-serif
 }
 
-/*-------------------- header-sect ------------------ */
+
 
     
     
@@ -32,8 +32,14 @@ header {
     background-size: cover;
 }
 header h1 {
-    color: var(--meat);
-    
+    color: var(--grape);
+    font-weight: bold;
+    font-size: 40px;
+    margin: 0;
+    font-style: italic;
+}
+header h1:hover {
+    color: var(--lightpurple);
 }
 header a {
     text-decoration: none;
@@ -50,8 +56,14 @@ header nav ul {
 }
 header nav ul li a {
     color: var(--indigo);
-}
+    padding: 10px 10px;
+    font-size: 2vw;
 
+}
+header nav ul li a:hover {
+    background: var(--meat);
+
+}
 /* ---------- section Title -----------*/
 
 .section-title {
@@ -68,17 +80,54 @@ header nav ul li a {
 .about-me {
     background-color: var(--lightpurple);
     background-size: cover;
+    display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+    width: 100%;
 }
-
+.about-me h2:hover {
+    color: var(--beachwater);
+}
+.about-me p {
+    color: var(--meat);
+}
+.about-me p:hover {
+    color: antiquewhite;
+}
+/* --------- work --------*/
 .work {
     background-color: var(--meat);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
 }
-
+.work h2:hover {
+    color: var(--sage);
+}
+/* --------- contact --------*/
 .contact {
     background-color: var(--beachwater);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
 }
+.contact h2:hover {
+    color: var(--lightpurple);
+}
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+/* --------- resume --------*/
 
 .resume {
     display: flex;
@@ -86,6 +135,16 @@ header nav ul li a {
     background-position: center;
     text-align: center;
     background-color: var(--sage);
+    width: 100%;
+}
+.resume p {
+    color: var(--grape);
+}
+.resume p:hover {
+    color: var(--meat);
+}
+.resume h2:hover {
+    color: var(--beachwater);
 }
 .resume div {
     text-align: center;
@@ -95,25 +154,43 @@ header nav ul li a {
 }
 
 form {
+    flex-wrap:wrap;
     text-align: center;
     background-color: var(--lightpurple);
     color: var(--grape);
     border: var(--meat) solid 4px;
    width: 100%;
-   margin: 4%;
+   margin-left: 35%;
+   margin-right: 35%;
 }
 .form-input {
     text-align: center;
     border: solid 1px var(--meat);
     display: block;
-    padding: 8px 10px;
+    padding: 7px 15px;
     color: var(--indigo);
     font-size: 18px;
     width: 95%;
     margin: 10px;
-    
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
+
 .request-form label {
     margin: 0 5px;
     
+}
+.request-form label:hover {
+    color: var(--beachwater);
+}
+
+button {
+    border: none;
+    padding: 15px;
+    background: var(--grape);
+    text-align: center;
+    
+}
+button:hover {
+    background: var(--meat);
 }
