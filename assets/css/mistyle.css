@@ -8,6 +8,12 @@
     --indigo: rgba(52,128,171,1);
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /*----------------------- body ------------------*/
 body {
     color: var(--sage);
@@ -18,13 +24,96 @@ body {
 
     
     
-    }
+    
 /*----------------------- header ------------------*/
 header {
-    background-color: var(--sage);
-    color: var(--sage);
+    background-color: var(--beachwater);
+   padding: 20px 35px;
+    background-size: cover;
 }
 header h1 {
-    color: var(--grape);
+    color: var(--meat);
+    
+}
+header a {
     text-decoration: none;
+}
+header nav {
+    margin: 7px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+header nav ul li a {
+    color: var(--indigo);
+}
+
+/* ---------- section Title -----------*/
+
+.section-title {
+     color: var(--indigo);
+    font-size: 25px;
+    text-align: center;
+    margin: 0 auto 35 auto;
+    width: 100%;
+
+    padding-bottom:20px; 
+} 
+
+/* ------- ABOUT ME --------*/
+.about-me {
+    background-color: var(--lightpurple);
+    background-size: cover;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.work {
+    background-color: var(--meat);
+}
+
+.contact {
+    background-color: var(--beachwater);
+}
+
+.resume {
+    display: flex;
+    flex-wrap: wrap;
+    background-position: center;
+    text-align: center;
+    background-color: var(--sage);
+}
+.resume div {
+    text-align: center;
+    width: 100%;
+
+
+}
+
+form {
+    text-align: center;
+    background-color: var(--lightpurple);
+    color: var(--grape);
+    border: var(--meat) solid 4px;
+   width: 100%;
+   margin: 4%;
+}
+.form-input {
+    text-align: center;
+    border: solid 1px var(--meat);
+    display: block;
+    padding: 8px 10px;
+    color: var(--indigo);
+    font-size: 18px;
+    width: 95%;
+    margin: 10px;
+    
+}
+.request-form label {
+    margin: 0 5px;
+    
 }
