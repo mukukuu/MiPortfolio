@@ -22,6 +22,8 @@ body {
 }
 
 .section-wrapper {
+    display: flex;
+    justify-content: center;
     width: 100%;
     margin: 10%;
 }
@@ -31,6 +33,7 @@ body {
     
 /*----------------------- header ------------------*/
 header {
+
     background-color: var(--beachwater);
    padding: 20px 35px;
     background-size: cover;
@@ -46,9 +49,7 @@ header h1 {
 header h1:hover {
     color: var(--lightpurple);
 }
-header a {
-    text-decoration: none;
-}
+
 header nav {
     margin: 7px 0;
 }
@@ -63,17 +64,18 @@ header nav ul li a {
     color: var(--indigo);
     padding: 10px 10px;
     font-size: 2vw;
-
+    text-decoration: none;
 }
 header nav ul li a:hover {
     background: var(--meat);
 
 }
+
 /* ---------- section Title -----------*/
 
 .section-title {
      color: var(--indigo);
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
     margin: 20px auto 20px auto;
     width: 100%;
@@ -83,6 +85,7 @@ header nav ul li a:hover {
 
 /* ------- ABOUT ME --------*/
 .about-me {
+    
     background-color: var(--lightpurple);
     background-size: cover;
     display: flex;
@@ -91,12 +94,34 @@ header nav ul li a:hover {
     align-items: center;
     
     margin: 2%;
+    padding: 20px 35px;
 }
 
 .about-me h2:hover {
     color: var(--beachwater);
 }
+
+
+   
+
+.portrait {
+text-align: center;
+display: flex;
+justify-content: center;
+}
+.portrait img {
+    border: solid 8px;
+    border-color: var(--meat);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 50%; 
+}
+.portrait img:hover {
+    border-color: var(--grape);
+}
 .about-me p {
+    display: flex;
     color: var(--meat);
     text-align: center;
     padding: 20px;
@@ -111,6 +136,7 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    text-align: center;
    
     margin: 2%;
 }
@@ -119,9 +145,28 @@ header nav ul li a:hover {
 }
 
 .works {
-    background-color:antiquewhite;
+   
     flex: 1;
     margin: 20px;
+    margin-bottom: 20px;
+
+}
+.work-text h3 {
+    font-style: italic;
+    font-size: 30px;
+    color: var(--indigo);
+    margin: 10px;
+}
+.work-text h3:hover{
+    color: var(--beachwater);
+}
+.work-text img {
+    width: 30%;
+    border: solid 6px;
+    border-color: var(--sage);
+}
+.work-text img:hover {
+    width: 45%;
 }
 /* --------- contact --------*/
 .contact {
@@ -131,7 +176,6 @@ header nav ul li a:hover {
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
-   
     margin: 20px;
 }
 
@@ -139,13 +183,28 @@ header nav ul li a:hover {
     color: var(--lightpurple);
 }
 .contact-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    list-style: none;
+    
+    font-size: 30px;
+    font-style: italic;
     text-align: center;
     width: 100%;
-    height: 200px;
+    margin: 10px;
+}
+.contact-links:hover{
+    color: var(--meat);
+}
+.contact-links div a{
+    text-decoration: none;
+}
+
+
+.contact-links div a p {
+    color: var(--sage);
+    
+}
+.contact-links div p:hover
+{
+    color: var(--meat);
 }
 /* --------- resume --------*/
 
@@ -236,3 +295,26 @@ footer {
 footer h2:hover {
     color: var(--indigo);
 }
+
+/* --- MEDIA QUERY 1888px-----*/
+@media screen and (max-width: 1888px) {
+    form {
+        margin-left: 15%;
+        margin-right: 15%;
+     }
+    }
+/* --- MEDIA QUERY 980px-----*/
+@media screen and (max-width: 980px) {
+    form {
+        margin-left: 15%;
+        margin-right: 15%;
+     }
+}
+
+/* --- MEDIA QUERY 768px-----*/
+@media screen and (max-width: 768px) {
+     form {
+        margin-left: 15%;
+        margin-right: 15%;
+     }
+    }

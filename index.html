@@ -17,7 +17,9 @@
     <header>
           <!--big name on header-->
          <h1>
-            <a >Yin Qin</a>
+   
+                Yin Qin
+         
          </h1>
           <!--nav clicks list-->
           <nav>
@@ -27,13 +29,13 @@
                          <a href="#About-Me">About Me</a>
                      </li>
                      <li>
-                         <a href="#Work">Work</a>
+                         <a href="#toWork">Work</a>
                      </li>
                      <li>
-                         <a href="#Contact-Me">Contact Me</a>
+                         <a href="#tocontact">Contact Me</a>
                      </li>
                      <li>
-                         <a href="#Resume">Resume</a>
+                         <a href="#toResume">Resume</a>
                      </li>
                  </ul>
           </nav>
@@ -41,9 +43,15 @@
      
  <section class="about-me">
      <div >
-         <h2 class="section-title">
-         About Me
-         </h2>
+        <h2 class="section-title">
+            About Me
+        </h2>
+         
+         
+         <div class="portrait">
+             <img src="./assets/images/host.jpeg"/>
+         </div>
+    </div>
          <!--about me text-->
          <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit.
              Architecto molestias blanditiis minima esse nihil illo voluptates expedita recusandae quis fuga,
@@ -56,7 +64,7 @@
 
 <!-------------------------- Work --------------------------->
 
-<section class="work">
+<section id="towork" class="work">
      <div class="section-title">
          <h2>
            Work
@@ -64,13 +72,14 @@
      </div>
      <!-- div 1 -->
      <div class="works">
-         <div class="work-content">
-         <img stc="" alt="first work img" />
-         </div>
+        
      <!-- div 1 text -->
      <article class="work-text">
+        <a href="https://mukukuu.github.io/run-buddy/" >
+
+            <img src="./assets/images/runbuddy-screenshot.png" alt="run buddy webpage screenshot">
+         </a>
          <div>
-             <img src=""
             <h3>
                  Run Buddy
             </h3>
@@ -78,17 +87,26 @@
      </article>
 
      <article class="work-text">
+         
          <div>
+             <a href="https://mukukuu.github.io/Horiseon/" >
+
+                <img src="./assets/images/Horiseon-screenshot.png" alt="Horiseon webpage screenshot">
+             </a>
             <h3>
-                 two
+                Horiseon
             </h3>
          </div>
         </article>
 
      <article class="work-text">
          <div >
+            <a href="https://mukukuu.github.io/Souad/" >
+
+                <img src="./assets/images/fanpage.png" alt="Souad Massi Fan Page screenshot">
+             </a>
             <h3>
-                 three
+                Souad Massi Fan Page!
             </h3>
          </div>
      </article>
@@ -100,25 +118,36 @@
 
 <!-------------------------- Contact Me --------------------------->
 
-<section class="contact">
+<section id="tocontact" class="contact">
     <div >
         <h2 class="section-title">
             Contact-Me
         </h2>
     </div>
-<ul class="contact-links">
-   <li>
-     <a>GitHub</a>
-   </li>
-
-</ul>
-    <div>
-
+<container class="contact-links">
+   <div>
+       
+     <a href="https://github.com/mukukuu">
+        <p>My GitHub page</p>
+    </a>
     </div>
+</container
+>
+<container class="contact-links">
+     <div>
+      <p>Work Number: 888-888-888-88888</p>
+    </div>
+</container>
+
+<container class="contact-links">
+    <div>
+     <p>Email address: qinii@me.com</p>
+   </div>
+</container>
 </section>
 
 <!-------------------------- Resume --------------------------->
- <section class="resume">
+ <section id="toResume" class="resume">
      <div>
          <h2 class="section-title">
              Resume
